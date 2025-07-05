@@ -5,28 +5,9 @@ import { useState } from "react";
 
 //If you need interactivity, consider converting part of this to a Client Component.
 export default function Home() {
-  const [name, setName] = useState("anil");
-  const apple = () => {
-    setName("sidhu");
-  };
-
-  const InnerComp = () => {
-    return <h1>Inner Component</h1>;
-  };
   return (
     <main className={styles.main}>
-      <h1>Events, function and state {name}</h1>
-      <button onClick={() => apple()}>Click me</button>
-      <InnerComp />
-      {InnerComp()}
+      <h1>Basic routing</h1>
     </main>
   );
 }
-
-const User = (props) => {
-  return (
-    <div>
-      <h2>user name is {props.name}</h2>
-    </div>
-  );
-};
