@@ -9,10 +9,16 @@ export default function Home() {
   const apple = () => {
     setName("sidhu");
   };
+
+  const InnerComp = () => {
+    return <h1>Inner Component</h1>;
+  };
   return (
     <main className={styles.main}>
       <h1>Events, function and state {name}</h1>
       <button onClick={() => apple()}>Click me</button>
+      <InnerComp />
+      {InnerComp()}
     </main>
   );
 }
