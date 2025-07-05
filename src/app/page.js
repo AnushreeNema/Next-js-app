@@ -4,10 +4,13 @@ import styles from "./page.module.css";
 
 //If you need interactivity, consider converting part of this to a Client Component.
 export default function Home() {
+  const apple = (item) => {
+    alert(item);
+  };
   return (
     <main className={styles.main}>
       <h1>Events, function and state</h1>
-      <button onClick={() => alert("hello next js")}>Click me</button>
+      <button onClick={() => apple("color")}>Click me</button>
     </main>
   );
 }
