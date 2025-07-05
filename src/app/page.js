@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client"; // always on type of file, on the child files of this file do not have to apply use client automatically applied
 import styles from "./page.module.css";
 //Error: Event handlers cannot be passed to Client Component props.
 
