@@ -8,7 +8,7 @@ const Login = () => {
   };
   return (
     <div>
-      <h1>login page</h1>
+      <h1 className="heading">login page</h1>
       <Link href="/">Go to Home page</Link>
       <br />
       <button onClick={() => navigate("loginstudent")}>
